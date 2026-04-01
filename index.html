@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario | NEXUS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="nexus-logo.png">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Calendario de contenido<span></span></h1>
+            </div>
+            
+            <div class="date-nav">
+                <button class="btn-nav" id="prevWeek">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                <h2 id="currentWeekRange">20 - 26 Abril</h2>
+                <button class="btn-nav" id="nextWeek">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="actions">
+                <!-- Botón removido por solicitud del usuario -->
+            </div>
+        </header>
+
+        <main class="calendar-grid" id="calendarGrid">
+            <!-- Day columns will be injected here by JS -->
+        </main>
+    </div>
+
+    <!-- Modal para Nuevo/Editar Post -->
+    <div class="modal-overlay" id="postModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Nuevo Contenido</h2>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            
+            <form id="postForm">
+                <input type="hidden" id="postId">
+                <input type="hidden" id="postDay">
+
+                <div class="form-group">
+                    <label>Título / Descripción corta</label>
+                    <input type="text" id="postTitle" placeholder="Ej: Lanzamiento Producto X" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Plataforma</label>
+                    <div class="platform-select" id="platformSelect">
+                        <div class="platform-opt" data-platform="instagram" title="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </div>
+                        <div class="platform-opt" data-platform="linkedin" title="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </div>
+                        <div class="platform-opt" data-platform="youtube" title="YouTube">
+                            <i data-lucide="youtube"></i>
+                        </div>
+                        <div class="platform-opt" data-platform="tiktok" title="TikTok">
+                            <i data-lucide="music-2"></i>
+                        </div>
+                    </div>
+                    <input type="hidden" id="selectedPlatform" value="instagram">
+                </div>
+
+                <div class="form-group">
+                    <label>Hora de publicación</label>
+                    <input type="time" id="postTime" value="12:00">
+                </div>
+
+                <div class="form-group">
+                    <label>Notas adicionales</label>
+                    <textarea id="postNotes" rows="3" placeholder="Añade detalles, hashtags o el copy..."></textarea>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-ghost" id="cancelModal">Cancelar</button>
+                    <button type="submit" class="btn-primary">Guardar Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal para Ver Post LinkedIn (Nuevo) -->
+    <div class="modal-overlay" id="linkedinViewer">
+        <div class="modal" style="max-width: 650px; padding: 0; background: #f3f2ef; border: none; box-shadow: 0 0 100px rgba(0,0,0,0.2);">
+            <div class="modal-header" style="padding: 1rem 1.5rem; background: #fff; margin: 0; border-radius: 1.5rem 1.5rem 0 0; border-bottom: 1px solid #e0e0e0;">
+                <h2 class="modal-title" style="font-size: 1rem;">Publicación para LinkedIn</h2>
+                <button class="close-btn" id="closeViewer">&times;</button>
+            </div>
+            <div class="linkedin-viewer-content" style="padding: 0; max-height: 85vh; overflow-y: auto;">
+                <div class="post-card linkedin" style="cursor: default; width: 100%; border: none; border-radius: 0;">
+                    <!-- Se inyectará por JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
