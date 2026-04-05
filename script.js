@@ -327,10 +327,13 @@ function showYouTubeViewer(id) {
     
     content.innerHTML = `
         <div class="yt-media" style="background: #000; border-radius: 0.5rem 0.5rem 0 0; overflow: hidden; will-change: transform;">
-            <video controls autoplay preload="auto" playsinline style="width: 100%; aspect-ratio: 16/9; display: block; border: none; box-shadow: none;">
-                <source src="../youtube-simulator/Video%20YouTube.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de video.
-            </video>
+    <iframe 
+        src="https://drive.google.com/file/d/1wxwLm4tmTq55243WNHHAuCM0OAdjRaoh/preview" 
+        width="640" 
+        height="360" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
         </div>
         <div class="yt-info" style="padding: 1.5rem; text-align: left; background: #fff;">
             <h1 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem;">NEXUS SEAMLESS: EL FIN DE LOS LÍMITES. EL FUTURO SE ENROLLA</h1>
