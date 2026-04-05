@@ -210,7 +210,7 @@ function showLinkedInViewer(id) {
             <p style="color: #0a66c2; font-size: 14px; margin-top: 15px;">${data.hashtags}</p>
         </div>
         <div class="linkedin-media">
-            <img src="${data.media}" alt="Nexus Seamless Media" style="width: 100%;">
+            <img src="nexus-seamless-dispositivo.png" alt="Nexus Seamless Media" style="width: 100%;">
         </div>
         </div>
     `;
