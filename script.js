@@ -187,7 +187,7 @@ function showLinkedInViewer(id) {
                    <p style="margin-bottom: 12px;">Es hora de dejar de adaptarnos a las máquinas. Es hora de que el hardware sea lo suficientemente valiente para moldearse a ti.</p>
                    <p style="margin-bottom: 12px;">¿Estás listo para dejar de buscar enchufes y empezar a buscar ideas?</p>
                    <p style="margin-bottom: 12px;">#NexusSeamless #FutureOfTech #HumanCentricDesign #Innovation #DeepTech #WorkFromAnywhere</p>`,
-            media: "Instagram_logo.png",
+            media: "nexus-seamless-mochila.png",
             hashtags: "#NexusSeamless #TechRevolution #MinimalismoFuncional #FuturoDelTrabajo #Innovation #Grafeno #DiseñoSinLímites"
         }
     };
