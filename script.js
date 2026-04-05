@@ -200,9 +200,8 @@ function showLinkedInViewer(id) {
                 <img src="../linkedin-simulator/logo_nexus.png" alt="Nexus">
             </div>
             <div class="linkedin-user-info">
-                <span class="linkedin-name" style="font-size: 14px; font-weight: 600;">NEXUS SEAMLESS · <span style="font-weight: 400; color: #666;">Seguir</span></span>
+                <span class="linkedin-name" style="font-size: 14px; font-weight: 600;">NEXUS SEAMLESS · </span>
                 <span class="linkedin-tagline" style="font-size: 12px; color: #666;">El primer ordenador sin cables ni puertos físicos</span>
-                <span style="font-size: 12px; color: #666;">${post.id === 4 ? '5 h' : '2 h'} • <i data-lucide="globe" style="width: 12px; height: 12px; display: inline-block; vertical-align: middle;"></i></span>
             </div>
         </div>
         <div class="linkedin-body" style="padding: 0 12px 12px 12px; font-size: 14px; text-align: left; color: rgba(0,0,0,0.9);">
@@ -213,16 +212,6 @@ function showLinkedInViewer(id) {
         <div class="linkedin-media">
             <img src="${data.media}" alt="Nexus Seamless Media" style="width: 100%;">
         </div>
-        <div class="linkedin-footer" style="padding: 8px 12px; border-top: 1px solid #ebebeb; margin-top: 10px;">
-            <div style="display: flex; justify-content: flex-end; color: #666; font-size: 12px; margin-bottom: 8px;">
-                ${post.id === 4 ? '842' : '1.285'} comentarios • ${post.id === 4 ? '615' : '846'} veces compartido
-            </div>
-            <div style="display: flex; gap: 12px; padding: 4px 0; border-top: 1px solid #ebebeb; color: #666; font-weight: 600; font-size: 14px;">
-                <div style="display: flex; align-items: center; gap: 4px; cursor: pointer;"><i data-lucide="thumbs-up" style="width: 18px;"></i> Recomendar</div>
-                <div style="display: flex; align-items: center; gap: 4px; cursor: pointer;"><i data-lucide="message-square" style="width: 18px;"></i> Comentar</div>
-                <div style="display: flex; align-items: center; gap: 4px; cursor: pointer;"><i data-lucide="repeat" style="width: 18px;"></i> Compartir</div>
-                <div style="display: flex; align-items: center; gap: 4px; cursor: pointer;"><i data-lucide="send" style="width: 18px;"></i> Enviar</div>
-            </div>
         </div>
     `;
     
