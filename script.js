@@ -172,7 +172,7 @@ function showLinkedInViewer(id) {
                    <p style="margin-bottom: 12px;">Olvida el cargador. La carga por radio-inducción ambiental permite que el Nexus Seamless se alimente de las señales de radiofrecuencia del entorno. Autonomía total, incluso en aislamiento. Estamos ante la Trama Conductiva Unificada. Es el salto de la computación mecánica a la tecnología molecular. El futuro no se transporta en una mochila, se lleva en la palma de la mano.</p>
                    <p style="margin-bottom: 12px;">El futuro del trabajo no tiene cables, no tiene peso y, por fin, no tiene límites.</p>
                    <p style="margin-bottom: 12px;">Bienvenidos a la era de la tecnología que fluye.</p>`,
-            media: "nexus-logo.png",
+            media: "nexus-seamless-dispositivo.png",
             hashtags: "#NexusSeamless #Grafeno #FutureOfWork #DigitalNomad #Productividad #Innovacion #DeepTech #Sostenibilidad"
         },
         4: {
@@ -187,7 +187,7 @@ function showLinkedInViewer(id) {
                    <p style="margin-bottom: 12px;">Es hora de dejar de adaptarnos a las máquinas. Es hora de que el hardware sea lo suficientemente valiente para moldearse a ti.</p>
                    <p style="margin-bottom: 12px;">¿Estás listo para dejar de buscar enchufes y empezar a buscar ideas?</p>
                    <p style="margin-bottom: 12px;">#NexusSeamless #FutureOfTech #HumanCentricDesign #Innovation #DeepTech #WorkFromAnywhere</p>`,
-            media: "../Nexus%20Seamless%20pared.png",
+            media: "Instagram_logo.png",
             hashtags: "#NexusSeamless #TechRevolution #MinimalismoFuncional #FuturoDelTrabajo #Innovation #Grafeno #DiseñoSinLímites"
         }
     };
@@ -210,7 +210,7 @@ function showLinkedInViewer(id) {
             <p style="color: #0a66c2; font-size: 14px; margin-top: 15px;">${data.hashtags}</p>
         </div>
         <div class="linkedin-media">
-            <img src="nexus-seamless-dispositivo.png" alt="Nexus Seamless Media" style="width: 100%;">
+            <img src="${data.media}" alt="Nexus Seamless Media" style="width: 100%;">
         </div>
         </div>
     `;
