@@ -262,19 +262,10 @@ function showInstagramViewer(id) {
     let mediaContent = '';
     if (post.id === 1) { // Video Reel
 mediaContent = `
-    <div style="position: relative; width: 100%; max-width: 400px; margin: 0 auto; aspect-ratio: 9 / 16; background: #000; border-radius: 12px; overflow: hidden;">
-        <video 
-            id="myVideo"
-            controls 
-            muted 
-            loop 
-            playsinline 
-            preload="metadata" 
-            style="width: 100%; height: 100%; object-fit: cover; display: block;">
-            <source src="instagram-reels.mp4" type="video/mp4">
-        </video>
-    </div>
-`;
+            <video controls autoplay preload="auto" playsinline style="width: 100%; max-height: 60vh; object-fit: contain; display: block;">
+                <source src="instagram-reels.mp4" type="video/mp4">
+            </video>
+        `;
     } else if (post.type === 'post') { // Static Image Post
         mediaContent = `
             <img src="post-estatico.png" style="width: 100%; height: auto; max-height: 55vh; object-fit: contain; background: #fff; display: block;">
