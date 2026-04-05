@@ -197,7 +197,7 @@ function showLinkedInViewer(id) {
     content.innerHTML = `
         <div class="post-header" style="padding: 12px;">
             <div class="linkedin-avatar">
-                <img src="../linkedin-simulator/logo_nexus.png" alt="Nexus">
+                <img src="logo-nexus.png" alt="Nexus">
             </div>
             <div class="linkedin-user-info">
                 <span class="linkedin-name" style="font-size: 14px; font-weight: 600;">NEXUS SEAMLESS · </span>
