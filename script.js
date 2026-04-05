@@ -246,13 +246,15 @@ function showInstagramViewer(id) {
                 <!-- Story Media -->
                 <img src="Story-nexus.png" style="width: 100%; height: 100%; object-fit: contain; background: #000;">
                 <!-- Story Input -->
-                <div style="position: absolute; bottom: 12px; left: 10px; right: 10px; display: flex; align-items: center; gap: 15px; z-index: 20;">
-                    <div style="flex: 1; border: 1px solid rgba(255,255,255,0.7); border-radius: 30px; padding: 8px 15px; color: #fff; font-size: 13px;">Enviar mensaje...</div>
-                    <span style="font-size: 22px; color: #fff;">❤️</span>
-                    <span style="font-size: 22px; color: #fff;">✈️</span>
+                <div style="position: absolute; bottom: 12px; left: 10px; right: 10px; display: flex; align-items: center; gap: 18px; z-index: 20;">
+                    <div style="flex: 1; border: 1px solid rgba(255,255,255,0.4); border-radius: 30px; padding: 8px 15px; color: #fff; font-size: 13px;">Enviar mensaje</div>
+                    <i data-lucide="heart" style="color: #fff; width: 22px; height: 22px; cursor: pointer;"></i>
+                    <i data-lucide="message-circle" style="color: #fff; width: 22px; height: 22px; cursor: pointer;"></i>
+                    <i data-lucide="send" style="color: #fff; width: 22px; height: 22px; cursor: pointer;"></i>
                 </div>
             </div>
         `;
+        lucide.createIcons();
         viewer.style.display = 'flex';
         return;
     }
@@ -261,7 +263,7 @@ function showInstagramViewer(id) {
     if (post.id === 1) { // Video Reel
         mediaContent = `
             <video controls autoplay preload="auto" playsinline style="width: 100%; max-height: 60vh; object-fit: contain; display: block;">
-                <source src="instagram-reels.mp4" type="video/mp4">
+                <source src="Nexus Seamles Reels.mp4" type="video/mp4">
             </video>
         `;
     } else if (post.type === 'post') { // Static Image Post
