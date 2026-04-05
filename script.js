@@ -261,15 +261,18 @@ function showInstagramViewer(id) {
 
     let mediaContent = '';
 if (post.id === 1) { // Video Reel
-    mediaContent = `
-        <iframe 
-            src="https://drive.google.com/file/d/1P3D6HrcCKkF6Bd8I4GfzU6N0Yi1DpcKs/preview" 
-            width="640" 
-            height="360" 
-            frameborder="0" 
-            allow="autoplay; encrypted-media" 
-            allowfullscreen>
-        </iframe>`;
+        mediaContent = `
+            <div class="reel-media" style="background: #000; border-radius: 0.5rem; overflow: hidden;">
+                <iframe 
+                    src="https://drive.google.com/file/d/1P3D6HrcCKkF6Bd8I4GfzU6N0Yi1DpcKs/preview" 
+                    width="100%" 
+                    height="500" 
+                    style="border: none; margin-bottom: -5px;" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        `;
 } else if (post.type === 'post') { // Static Image Post
         mediaContent = `
             <img src="post-estatico.png" style="width: 100%; height: auto; max-height: 55vh; object-fit: contain; background: #fff; display: block;">
