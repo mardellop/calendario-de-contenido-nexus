@@ -263,7 +263,7 @@ function showInstagramViewer(id) {
     if (post.id === 1) { // Video Reel
         mediaContent = `
             <video controls autoplay preload="auto" playsinline style="width: 100%; max-height: 60vh; object-fit: contain; display: block;">
-                <source src="Nexus Seamles Reels.mp4" type="video/mp4">
+                <source src="instagram-reels.mp4" type="video/mp4">
             </video>
         `;
     } else if (post.type === 'post') { // Static Image Post
