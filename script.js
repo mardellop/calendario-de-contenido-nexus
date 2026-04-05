@@ -172,7 +172,7 @@ function showLinkedInViewer(id) {
                    <p style="margin-bottom: 12px;">Olvida el cargador. La carga por radio-inducción ambiental permite que el Nexus Seamless se alimente de las señales de radiofrecuencia del entorno. Autonomía total, incluso en aislamiento. Estamos ante la Trama Conductiva Unificada. Es el salto de la computación mecánica a la tecnología molecular. El futuro no se transporta en una mochila, se lleva en la palma de la mano.</p>
                    <p style="margin-bottom: 12px;">El futuro del trabajo no tiene cables, no tiene peso y, por fin, no tiene límites.</p>
                    <p style="margin-bottom: 12px;">Bienvenidos a la era de la tecnología que fluye.</p>`,
-            media: "logo-nexus.png",
+            media: "nexus-logo.png",
             hashtags: "#NexusSeamless #Grafeno #FutureOfWork #DigitalNomad #Productividad #Innovacion #DeepTech #Sostenibilidad"
         },
         4: {
