@@ -262,18 +262,16 @@ function showInstagramViewer(id) {
     let mediaContent = '';
     if (post.id === 1) { // Video Reel
 mediaContent = `
-    <div style="width: 100%; display: flex; justify-content: center; background-color: #000; border-radius: 8px; overflow: hidden;">
+    <div style="position: relative; width: 100%; max-width: 400px; margin: 0 auto; aspect-ratio: 9 / 16; background: #000; border-radius: 12px; overflow: hidden;">
         <video 
+            id="myVideo"
             controls 
-            autoplay 
             muted 
-            loop
-            preload="auto" 
+            loop 
             playsinline 
-            style="width: 100%; max-width: 400px; height: auto; max-height: 80vh; object-fit: cover; display: block;"
-        >
+            preload="metadata" 
+            style="width: 100%; height: 100%; object-fit: cover; display: block;">
             <source src="instagram-reels.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
         </video>
     </div>
 `;
