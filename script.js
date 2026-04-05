@@ -261,11 +261,22 @@ function showInstagramViewer(id) {
 
     let mediaContent = '';
     if (post.id === 1) { // Video Reel
-        mediaContent = `
-            <video controls autoplay preload="auto" playsinline style="width: 100%; max-height: 60vh; object-fit: contain; display: block;">
-                <source src="instagram-reels.mp4" type="video/mp4">
-            </video>
-        `;
+mediaContent = `
+    <div style="width: 100%; display: flex; justify-content: center; background-color: #000; border-radius: 8px; overflow: hidden;">
+        <video 
+            controls 
+            autoplay 
+            muted 
+            loop
+            preload="auto" 
+            playsinline 
+            style="width: 100%; max-width: 400px; height: auto; max-height: 80vh; object-fit: cover; display: block;"
+        >
+            <source src="instagram-reels.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </div>
+`;
     } else if (post.type === 'post') { // Static Image Post
         mediaContent = `
             <img src="post-estatico.png" style="width: 100%; height: auto; max-height: 55vh; object-fit: contain; background: #fff; display: block;">
