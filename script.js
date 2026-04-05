@@ -261,9 +261,9 @@ function showInstagramViewer(id) {
 
     let mediaContent = '';
     if (post.id === 1) { // Video Reel
-mediaContent = `
-            <video controls autoplay preload="auto" playsinline style="width: 100%; max-height: 60vh; object-fit: contain; display: block;">
-                <source src="../instagram-reels.mp4" type="video/mp4">
+        mediaContent = `
+            <video src="instagram-reels.mp4" controls autoplay muted loop playsinline style="width: 100%; max-height: 60vh; object-fit: contain; display: block; border-radius: 0.5rem;">
+                Tu navegador no soporta el formato de video.
             </video>
         `;
     } else if (post.type === 'post') { // Static Image Post
